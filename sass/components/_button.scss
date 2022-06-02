@@ -1,0 +1,24 @@
+.btn {
+    text-decoration: none;
+    padding: 1rem 2rem 1rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    &-white {
+      background-color: $color-white;
+      color: $color-dark-grey;
+      animation-name: moveUp;
+      animation-duration: .7s;
+    }
+    
+    &:hover {
+      transform: translate(.5rem, -.5rem);
+      box-shadow: -.5rem .5rem 2rem rgba($color-black, 0.29);
+    }
+    
+    &:active {
+      transform: translate(.3rem, -.3rem);
+      box-shadow: -.3rem .3rem 2rem rgba($color-black, 0.356);
+    }
+  }
+  

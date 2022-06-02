@@ -1,0 +1,25 @@
+.heading-primary {
+    text-transform: uppercase;
+    color: $color-white;
+  
+    &--main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 700;
+      letter-spacing: 3.5rem;
+      animation-name: moveToRight;
+      animation-duration: 1s;
+      backface-visibility: hidden;
+    }
+    
+    &--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.74rem;
+      animation-name: moveToLeft;
+      animation-duration: 1s;
+      margin-bottom: 6rem;
+    }
+    
+  }
