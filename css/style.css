@@ -1,0 +1,131 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+header {
+  height: 95vh;
+  background-image: linear-gradient(to right, #7ed56fbb, #28b485d2),
+    url('../img/hero.jpg');
+  background-size: cover;
+  /* take first coordinate as (0,0) */
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  /* position: relative; */
+}
+
+.logo-box {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.logo {
+  height: 35px;
+  color: white;
+}
+
+.text-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.primary-heading {
+  text-transform: uppercase;
+  color: white;
+}
+
+.primary-heading-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 35px;
+  animation-name: moveToRight;
+  animation-duration: 1s;
+  backface-visibility: hidden;
+}
+
+.primary-heading-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+  animation-name: moveToLeft;
+  animation-duration: 1s;
+  margin-bottom: 60px;
+}
+
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+
+.btn{
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+.btn-white{
+  background-color: white;
+  color: #777;
+}
+
+.btn:hover{
+  transform: translate(5px, -5px);
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.29);
+}
+
+.btn:active{
+  transform: translate(3px, -3px);
+  box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.356);
+}
