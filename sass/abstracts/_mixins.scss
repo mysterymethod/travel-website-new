@@ -1,0 +1,13 @@
+@mixin clearfix() {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin rightChildMarginZero() {
+    &:last-child {
+        margin-right: 0;
+    }
+}
