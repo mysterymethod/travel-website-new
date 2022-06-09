@@ -102,6 +102,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-skew-by-7 {
+  transform: skewY(7deg); }
+
 .btn {
   text-decoration: none;
   padding: 1rem 2rem 1rem 2rem;
@@ -138,6 +141,25 @@ body {
   transform: translate(0.3rem, -0.3rem);
   box-shadow: -0.3rem 0.3rem 2rem rgba(0, 0, 0, 0.356); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.723);
+  border-radius: 2%;
+  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: -0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.4);
+  transition: all .2s; }
+  .feature-box__icon {
+    color: #28b485;
+    font-size: 5rem;
+    background: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box__text {
+    padding-top: 1.2rem; }
+  .feature-box:hover {
+    transform: translateY(-2rem) scale(1.2); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -162,6 +184,13 @@ body {
       z-index: 2; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
+
+.tour-box {
+  height: 50rem;
+  background-color: grey;
+  transition: all .2s; }
+  .tour-box:hover {
+    transform: rotateY(180deg); }
 
 .row {
   width: 114rem;
@@ -216,3 +245,15 @@ body {
   background-color: #f7f7f7;
   padding: 35rem 0;
   margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right, #7ed56fbb, #28b485d2), url("../img/nat-4.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -15rem; }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 20rem 0 40rem 0;
+  margin-top: -10rem; }
